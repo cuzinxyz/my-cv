@@ -4,9 +4,10 @@
     --color-text-button: #fdfdfe;
     --color-background-button: #B7CADB;
     --grap-element: 15px;
-    --grap-part: 20px;
+    --grap-part: 40px;
     --grap-part-name: 17.5px;
-    --height-icon: 1.5rem
+    --height-icon: 1.5rem;
+    --hero-icon: 2rem
 }
 
 /* Base */
@@ -24,7 +25,7 @@
 
 /* CSS */
 .page {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +37,7 @@
 .container {
     background-color: white;
     width: 793.700787px;
-    height: 1122.519685px;
+    height: auto;
     padding: 40px;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 0px 8px;
@@ -54,7 +55,7 @@
 }
 
 .header .name {
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     font-family: "MixcaseMixed";
     line-height: 0.6;
@@ -63,7 +64,7 @@
 .header .position {
     text-align: center;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
 }
 .header .contact {
     text-align: center;
@@ -83,7 +84,7 @@
 }
 
 .header .contact .item .item_content {
-    font-size: 11px;
+    font-size: 13px;
 }
 .header .border {
     border-bottom: 1px solid gray;
@@ -243,11 +244,6 @@
     border: 1px solid gainsboro;
 }
 
-.projects .project .description .description_functions .function .function_icon {
-    height: var(--height-icon);
-    padding-right: 5px;
-}
-
 .projects .project .project_info {
     list-style: circle;
     margin-left: 30px;
@@ -255,7 +251,11 @@
     flex-direction: column;
     gap: var(--grap-element);
 }
-
+.projects .project .description .description_functions .heroicon {
+    width: var(--height-icon);
+    height: var(--height-icon);
+    color: #333;
+}
 
 /* EDUCATION */
 .content .educations {
@@ -286,7 +286,7 @@
 }
 
 .content .educations .education .school {
-    font-weight: bold;
+    font-weight: 300;
     font-size: 15px; 
 }
 
